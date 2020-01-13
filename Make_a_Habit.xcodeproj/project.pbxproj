@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D47E4BC23CC62B80075F87C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47E4BB23CC62B80075F87C /* AppDelegate.swift */; };
 		8D47E4BE23CC62B80075F87C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47E4BD23CC62B80075F87C /* SceneDelegate.swift */; };
-		8D47E4C023CC62B80075F87C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47E4BF23CC62B80075F87C /* ViewController.swift */; };
+		8D47E4C023CC62B80075F87C /* HabitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47E4BF23CC62B80075F87C /* HabitsVC.swift */; };
 		8D47E4C323CC62B80075F87C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D47E4C123CC62B80075F87C /* Main.storyboard */; };
 		8D47E4C623CC62B80075F87C /* Make_a_Habit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D47E4C423CC62B80075F87C /* Make_a_Habit.xcdatamodeld */; };
 		8D47E4C823CC62BA0075F87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D47E4C723CC62BA0075F87C /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		8D47E4B823CC62B80075F87C /* Make_a_Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Make_a_Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D47E4BB23CC62B80075F87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D47E4BD23CC62B80075F87C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D47E4BF23CC62B80075F87C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D47E4BF23CC62B80075F87C /* HabitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsVC.swift; sourceTree = "<group>"; };
 		8D47E4C223CC62B80075F87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D47E4C523CC62B80075F87C /* Make_a_Habit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Make_a_Habit.xcdatamodel; sourceTree = "<group>"; };
 		8D47E4C723CC62BA0075F87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,9 +58,12 @@
 		8D47E4BA23CC62B80075F87C /* Make_a_Habit */ = {
 			isa = PBXGroup;
 			children = (
+				8D47E4D523CC62EB0075F87C /* Extensions */,
+				8D47E4D423CC62E50075F87C /* Enums */,
+				8D47E4D323CC62DF0075F87C /* View */,
+				8D47E4D223CC62D40075F87C /* Controller */,
 				8D47E4BB23CC62B80075F87C /* AppDelegate.swift */,
 				8D47E4BD23CC62B80075F87C /* SceneDelegate.swift */,
-				8D47E4BF23CC62B80075F87C /* ViewController.swift */,
 				8D47E4C123CC62B80075F87C /* Main.storyboard */,
 				8D47E4C723CC62BA0075F87C /* Assets.xcassets */,
 				8D47E4C923CC62BA0075F87C /* LaunchScreen.storyboard */,
@@ -68,6 +71,35 @@
 				8D47E4C423CC62B80075F87C /* Make_a_Habit.xcdatamodeld */,
 			);
 			path = Make_a_Habit;
+			sourceTree = "<group>";
+		};
+		8D47E4D223CC62D40075F87C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D47E4BF23CC62B80075F87C /* HabitsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8D47E4D323CC62DF0075F87C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D47E4D423CC62E50075F87C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8D47E4D523CC62EB0075F87C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D47E4C023CC62B80075F87C /* ViewController.swift in Sources */,
+				8D47E4C023CC62B80075F87C /* HabitsVC.swift in Sources */,
 				8D47E4BC23CC62B80075F87C /* AppDelegate.swift in Sources */,
 				8D47E4C623CC62B80075F87C /* Make_a_Habit.xcdatamodeld in Sources */,
 				8D47E4BE23CC62B80075F87C /* SceneDelegate.swift in Sources */,
