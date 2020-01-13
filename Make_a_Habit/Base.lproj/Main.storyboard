@@ -31,6 +31,9 @@
                                             <constraint firstAttribute="height" constant="40" id="ChZ-hW-6bB"/>
                                         </constraints>
                                         <state key="normal" image="plus"/>
+                                        <connections>
+                                            <action selector="addHabitBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kam-Kf-fys"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,6 +91,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="fRZ-FA-k68" id="byD-wJ-J1y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
