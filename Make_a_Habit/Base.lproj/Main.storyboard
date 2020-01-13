@@ -59,14 +59,32 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-FA-k68">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="rKw-pT-Xwz">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rKw-pT-Xwz" id="AQL-Mu-trv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fRZ-FA-k68" firstAttribute="trailing" secondItem="Vdq-gC-1zF" secondAttribute="trailing" id="2jk-ne-qwg"/>
                             <constraint firstItem="Vdq-gC-1zF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DLR-gE-KRK"/>
                             <constraint firstItem="Vdq-gC-1zF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HWp-kY-pB6"/>
                             <constraint firstItem="Vdq-gC-1zF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d6W-LA-5TW"/>
+                            <constraint firstItem="fRZ-FA-k68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="eGq-SG-uQG"/>
                             <constraint firstItem="y5B-sW-QL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvb-Dk-3Qr"/>
                             <constraint firstItem="y5B-sW-QL4" firstAttribute="top" secondItem="Vdq-gC-1zF" secondAttribute="bottom" constant="250" id="nR1-1b-JZ5"/>
+                            <constraint firstAttribute="bottom" secondItem="fRZ-FA-k68" secondAttribute="bottom" id="q8H-zm-976"/>
+                            <constraint firstItem="fRZ-FA-k68" firstAttribute="leading" secondItem="Vdq-gC-1zF" secondAttribute="leading" id="xMT-mx-rnk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
