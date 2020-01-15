@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HabitsVC: UIViewController {
 
@@ -14,11 +15,33 @@ class HabitsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.isHidden = false
     }
     
     @IBAction func addHabitBtnPressed(_ sender: Any) {
-        print("Button pressed!")
+        guard let createHabitVC = storyboard?.instantiateViewController(identifier: "CreateHabitVC") else {
+            return
+        }
+        presentDetail(createHabitVC)
+    }
+}
+
+extension HabitsVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "habitCell") as? HabitCell else {
+            return UITableViewCell()
+        }
+        cell.configureCell(details: "Eat Salad", type: .shortTerm, habitProgressAmount: 2)
+        return cell
     }
 }
