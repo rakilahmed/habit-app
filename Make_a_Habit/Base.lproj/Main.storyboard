@@ -18,7 +18,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-gC-1zF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-5v-EQw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-5v-EQw">
                                         <rect key="frame" x="50" y="56" width="275" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="aTh-vL-mGV"/>
@@ -26,7 +26,6 @@
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-Zu-UHt">
                                         <rect key="frame" x="325" y="50.666666666666657" width="35" height="35"/>
@@ -132,18 +131,39 @@
                                                     <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dox-pL-nCP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFB-F6-clm">
+                                                            <rect key="frame" x="98.333333333333329" y="22.666666666666671" width="178.66666666666669" height="42"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MFB-F6-clm" firstAttribute="centerY" secondItem="dox-pL-nCP" secondAttribute="centerY" id="fZt-KU-aAj"/>
+                                                        <constraint firstItem="MFB-F6-clm" firstAttribute="centerX" secondItem="dox-pL-nCP" secondAttribute="centerX" id="t9n-4N-Jt8"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZR4-GW-4K3" firstAttribute="trailing" secondItem="AQL-Mu-trv" secondAttribute="trailingMargin" id="Gez-JI-sGk"/>
                                                 <constraint firstItem="YMn-Or-BmC" firstAttribute="leading" secondItem="AQL-Mu-trv" secondAttribute="leadingMargin" id="IrX-LT-Z58"/>
+                                                <constraint firstItem="dox-pL-nCP" firstAttribute="top" secondItem="AQL-Mu-trv" secondAttribute="top" id="OGX-sZ-Hes"/>
+                                                <constraint firstAttribute="bottom" secondItem="dox-pL-nCP" secondAttribute="bottom" constant="-9" id="Pab-fB-xhq"/>
                                                 <constraint firstItem="YMn-Or-BmC" firstAttribute="top" secondItem="ZR4-GW-4K3" secondAttribute="top" id="RfP-c3-KGW"/>
+                                                <constraint firstAttribute="trailing" secondItem="dox-pL-nCP" secondAttribute="trailing" id="Sgs-i9-KFv"/>
                                                 <constraint firstItem="ZR4-GW-4K3" firstAttribute="bottom" secondItem="AQL-Mu-trv" secondAttribute="bottomMargin" id="bP4-jZ-QEN"/>
+                                                <constraint firstItem="dox-pL-nCP" firstAttribute="leading" secondItem="AQL-Mu-trv" secondAttribute="leading" id="d3i-TH-hho"/>
                                                 <constraint firstItem="ZR4-GW-4K3" firstAttribute="top" secondItem="AQL-Mu-trv" secondAttribute="topMargin" id="duN-4N-Twd"/>
                                                 <constraint firstItem="ZR4-GW-4K3" firstAttribute="leading" secondItem="YMn-Or-BmC" secondAttribute="trailing" constant="20" id="eO6-hJ-WeD"/>
                                                 <constraint firstAttribute="bottom" secondItem="YMn-Or-BmC" secondAttribute="bottom" constant="10" id="yQ2-Ym-EQ9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="competionView" destination="dox-pL-nCP" id="aiu-Z2-6ha"/>
                                             <outlet property="habitDetails" destination="AQy-7T-mc6" id="Dqw-Pe-3ZH"/>
                                             <outlet property="habitProgress" destination="ZR4-GW-4K3" id="EKE-Zt-vBi"/>
                                             <outlet property="habitType" destination="N6T-9t-t7C" id="nDf-UZ-7cs"/>
@@ -252,7 +272,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZB-dT-6bK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-va-ETk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-va-ETk">
                                         <rect key="frame" x="50" y="56" width="275" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="1Fg-4J-h77"/>
@@ -260,7 +280,6 @@
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-n6-bVV">
                                         <rect key="frame" x="15" y="50.666666666666657" width="35" height="35"/>

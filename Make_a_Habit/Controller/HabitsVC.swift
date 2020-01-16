@@ -26,6 +26,11 @@ class HabitsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchCoreDataObj()
+        tableView.reloadData()
+    }
+    
+    func fetchCoreDataObj() {
         self.fetch { (complete) in
             if complete {
                 if habits.count >= 1 {
@@ -35,7 +40,6 @@ class HabitsVC: UIViewController {
                 }
             }
         }
-        tableView.reloadData()
     }
     
     @IBAction func addHabitBtnPressed(_ sender: Any) {
@@ -61,14 +65,66 @@ extension HabitsVC: UITableViewDelegate, UITableViewDataSource {
         }
         
         let habit = habits[indexPath.row]
-        
         cell.configureCell(habit: habit)
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeHabit(atIndexPath: indexPath)
+            self.fetchCoreDataObj()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        
+        let addAction = UITableViewRowAction(style: .normal, title: "+1") { (rowAction, indexPath) in
+            self.setProgress(atIndexPath: indexPath)
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
+        deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        addAction.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+        
+        return [deleteAction, addAction]
     }
 }
 
 extension HabitsVC {
+    func setProgress(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+
+        let chosenHabit = habits[indexPath.row]
+        
+        if chosenHabit.habitProgress < chosenHabit.habitCompletion {
+            chosenHabit.habitProgress = chosenHabit.habitProgress + 1
+        } else {
+            return
+        }
+        
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not set progress: \(error.localizedDescription)")
+        }
+    }
+    
+    func removeHabit(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete(habits[indexPath.row])
+        do {
+            try managedContext.save()
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
+    
     func fetch(completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         
@@ -81,7 +137,5 @@ extension HabitsVC {
             debugPrint("Could not fetch: \(error.localizedDescription)")
             completion(false)
         }
-       
-        
     }
 }

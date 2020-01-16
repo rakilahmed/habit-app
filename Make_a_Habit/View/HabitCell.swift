@@ -12,11 +12,18 @@ class HabitCell: UITableViewCell {
     @IBOutlet weak var habitDetails: UILabel!
     @IBOutlet weak var habitType: UILabel!
     @IBOutlet weak var habitProgress: UILabel!
+    @IBOutlet weak var competionView: UIView!
     
     func configureCell(habit: Habit) {
         self.habitDetails.text = habit.habitDetails
         self.habitType.text = habit.habitType
         self.habitProgress.text = String(describing: habit.habitProgress)
+        
+        if habit.habitProgress == habit.habitCompletion {
+            self.competionView.isHidden = false
+        } else {
+            self.competionView.isHidden = true
+        }
     }
     
 }
