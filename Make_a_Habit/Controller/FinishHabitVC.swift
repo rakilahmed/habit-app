@@ -30,7 +30,13 @@ class FinishHabitVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func makeHabitBtnPressed(_ sender: Any) {
         // Pass date into core date Habit model
-        
+        if pointsTextField.text != "" {
+            self.save { (complete) in
+                if complete {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
@@ -38,6 +44,20 @@ class FinishHabitVC: UIViewController, UITextFieldDelegate {
     }
     
     func save(completion: (_ finished: Bool) -> ()) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        let habit = Habit(context: managedContext)
         
+        habit.habitDetails = habitDetail
+        habit.habitType = habitType.rawValue
+        habit.habitCompletion = Int32(pointsTextField.text!)!
+        habit.habitProgress = Int32(0)
+        
+        do {
+            try managedContext.save()
+            completion(true)
+        } catch {
+            debugPrint("Could not save: \(error.localizedDescription)")
+            completion(false)
+        }
     }
 }

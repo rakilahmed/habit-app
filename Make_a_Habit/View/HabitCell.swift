@@ -13,10 +13,10 @@ class HabitCell: UITableViewCell {
     @IBOutlet weak var habitType: UILabel!
     @IBOutlet weak var habitProgress: UILabel!
     
-    func configureCell(details: String, type: HabitType, habitProgressAmount: Int) {
-        self.habitDetails.text = details
-        self.habitType.text = type.rawValue
-        self.habitProgress.text = String(describing: habitProgressAmount)
+    func configureCell(habit: Habit) {
+        self.habitDetails.text = habit.habitDetails
+        self.habitType.text = habit.habitType
+        self.habitProgress.text = String(describing: habit.habitProgress)
     }
     
 }
