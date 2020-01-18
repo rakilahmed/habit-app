@@ -10,7 +10,7 @@
         <!--HabitsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HabitsVC" customModule="Make_a_Habit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HabitsVC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="HabitsVC" customModule="Make_a_Habit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,13 +18,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-gC-1zF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-5v-EQw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53Z-5v-EQw">
                                         <rect key="frame" x="50" y="56" width="275" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="aTh-vL-mGV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-Zu-UHt">
@@ -33,7 +33,7 @@
                                             <constraint firstAttribute="height" constant="35" id="ChZ-hW-6bB"/>
                                             <constraint firstAttribute="width" constant="35" id="el1-gr-1Cq"/>
                                         </constraints>
-                                        <state key="normal" image="plus"/>
+                                        <state key="normal" backgroundImage="plus"/>
                                         <connections>
                                             <action selector="addHabitBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kam-Kf-fys"/>
                                         </connections>
@@ -50,16 +50,22 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="y5B-sW-QL4">
-                                <rect key="frame" x="48.333333333333343" y="320" width="278.33333333333326" height="51.666666666666686"/>
+                                <rect key="frame" x="42.666666666666657" y="320" width="289.66666666666674" height="84.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Make_a_Habit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-Fn-Q3v">
-                                        <rect key="frame" x="0.0" y="0.0" width="278.33333333333331" height="28.333333333333332"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey there!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-Fn-Q3v">
+                                        <rect key="frame" x="90.333333333333343" y="0.0" width="109.33333333333334" height="29.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Make_a_Habit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk9-mB-skI">
+                                        <rect key="frame" x="0.0" y="31.666666666666686" width="289.66666666666669" height="29.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To start, create a new habit!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUh-wr-7jx">
-                                        <rect key="frame" x="31.999999999999986" y="30.333333333333314" width="214.66666666666663" height="21.333333333333329"/>
+                                        <rect key="frame" x="37.666666666666671" y="63.333333333333321" width="214.66666666666663" height="21.333333333333336"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -67,7 +73,7 @@
                                 </subviews>
                             </stackView>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-FA-k68">
-                                <rect key="frame" x="0.0" y="101" width="375" height="711"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="78" id="rKw-pT-Xwz" customClass="HabitCell" customModule="Make_a_Habit" customModuleProvider="target">
@@ -86,7 +92,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbj-jF-jC1">
                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="30.666666666666668"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="60" id="8Rg-iq-vcs"/>
+                                                                        <constraint firstAttribute="width" constant="60" id="AxE-5x-9FL"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                                     <nil key="textColor"/>
@@ -179,7 +185,7 @@
                             <constraint firstItem="Vdq-gC-1zF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HWp-kY-pB6"/>
                             <constraint firstItem="Vdq-gC-1zF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d6W-LA-5TW"/>
                             <constraint firstItem="y5B-sW-QL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fvb-Dk-3Qr"/>
-                            <constraint firstItem="fRZ-FA-k68" firstAttribute="top" secondItem="Vdq-gC-1zF" secondAttribute="bottom" constant="1" id="kYn-DZ-Wop"/>
+                            <constraint firstItem="fRZ-FA-k68" firstAttribute="top" secondItem="Vdq-gC-1zF" secondAttribute="bottom" id="kYn-DZ-Wop"/>
                             <constraint firstItem="y5B-sW-QL4" firstAttribute="top" secondItem="Vdq-gC-1zF" secondAttribute="bottom" constant="220" id="nR1-1b-JZ5"/>
                             <constraint firstAttribute="bottom" secondItem="fRZ-FA-k68" secondAttribute="bottom" id="q8H-zm-976"/>
                             <constraint firstItem="fRZ-FA-k68" firstAttribute="leading" secondItem="Vdq-gC-1zF" secondAttribute="leading" id="xMT-mx-rnk"/>
@@ -215,7 +221,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aiming for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgM-1Q-ftY">
                                         <rect key="frame" x="0.0" y="154.66666666666669" width="335" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="B5S-Lh-bcw">
@@ -226,8 +232,7 @@
                                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                 <state key="normal" title="SHORT TERM">
-                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="shortTermBtnPressed:" destination="aRj-c3-2gU" eventType="touchUpInside" id="Me4-P1-TSe"/>
@@ -238,8 +243,7 @@
                                                 <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                                 <state key="normal" title="LONG TERM">
-                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="longTermBtnPressed:" destination="aRj-c3-2gU" eventType="touchUpInside" id="7SG-0r-R3n"/>
@@ -263,7 +267,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                 <state key="normal" title="NEXT">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="nextBtnPressed:" destination="aRj-c3-2gU" eventType="touchUpInside" id="VfI-kB-qFv"/>
@@ -272,13 +276,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZB-dT-6bK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-va-ETk">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make_a_Habit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-va-ETk">
                                         <rect key="frame" x="50" y="56" width="275" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="1Fg-4J-h77"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-n6-bVV">
@@ -287,7 +291,8 @@
                                             <constraint firstAttribute="height" constant="35" id="mPU-2t-x1v"/>
                                             <constraint firstAttribute="width" constant="35" id="pRH-d8-fO4"/>
                                         </constraints>
-                                        <state key="normal" image="back-arrow"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="back-arrow"/>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="aRj-c3-2gU" eventType="touchUpInside" id="0HI-Il-U8v"/>
                                         </connections>
@@ -346,7 +351,7 @@
                                             <constraint firstAttribute="height" constant="24" id="7ay-Un-d2s"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
@@ -356,9 +361,22 @@
                                             <constraint firstAttribute="width" constant="35" id="3i5-X1-3nT"/>
                                             <constraint firstAttribute="height" constant="35" id="dYu-is-meF"/>
                                         </constraints>
-                                        <state key="normal" image="back-arrow"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="back-arrow"/>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="FBg-wW-Q5z" eventType="touchUpInside" id="ebf-OS-iYF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqA-WW-WpY">
+                                        <rect key="frame" x="325" y="50.666666666666657" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="GfG-po-OE7"/>
+                                            <constraint firstAttribute="height" constant="35" id="nm2-Ah-IkV"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <connections>
+                                            <action selector="closeBtnPressed:" destination="FBg-wW-Q5z" eventType="touchUpInside" id="3pV-wL-XQ4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -366,16 +384,18 @@
                                 <constraints>
                                     <constraint firstItem="SXS-Vd-yri" firstAttribute="centerX" secondItem="WFy-Da-o3U" secondAttribute="centerX" id="CL3-Fd-GTq"/>
                                     <constraint firstItem="Mw4-v2-CHD" firstAttribute="leading" secondItem="WFy-Da-o3U" secondAttribute="leading" constant="15" id="MaW-Id-nCH"/>
+                                    <constraint firstAttribute="trailing" secondItem="QqA-WW-WpY" secondAttribute="trailing" constant="15" id="TGC-Lp-sNw"/>
                                     <constraint firstItem="Mw4-v2-CHD" firstAttribute="centerY" secondItem="SXS-Vd-yri" secondAttribute="centerY" id="a5H-Mz-YmG"/>
                                     <constraint firstAttribute="trailing" secondItem="SXS-Vd-yri" secondAttribute="trailing" constant="50" id="eco-Vy-NXI"/>
                                     <constraint firstAttribute="height" constant="100" id="jrU-wD-Nwe"/>
+                                    <constraint firstItem="SXS-Vd-yri" firstAttribute="centerY" secondItem="QqA-WW-WpY" secondAttribute="centerY" id="pvK-7S-byt"/>
                                     <constraint firstAttribute="bottom" secondItem="SXS-Vd-yri" secondAttribute="bottom" constant="20" id="t5x-Ws-1vm"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xm2-sB-NBK">
                                 <rect key="frame" x="20" y="120" width="335" height="110"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many points left? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="042-8a-pWr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For how long?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="042-8a-pWr">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="CCh-PC-lXL"/>
@@ -406,7 +426,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
                                         <state key="normal" title="MAKE HABIT">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="makeHabitBtnPressed:" destination="FBg-wW-Q5z" eventType="touchUpInside" id="OAS-Mt-rA3"/>
@@ -448,6 +468,7 @@
     </scenes>
     <resources>
         <image name="back-arrow" width="40" height="40"/>
+        <image name="close" width="40" height="40"/>
         <image name="plus" width="40" height="40"/>
     </resources>
 </document>

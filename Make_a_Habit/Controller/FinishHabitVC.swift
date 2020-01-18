@@ -29,17 +29,22 @@ class FinishHabitVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func makeHabitBtnPressed(_ sender: Any) {
-        // Pass date into core date Habit model
+        // Pass details into core data Habit model
         if pointsTextField.text != "" {
             self.save { (complete) in
                 if complete {
-                    dismiss(animated: true, completion: nil)
+                    dismissDetail()
                 }
             }
         }
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {
+        guard let CreateHabitVC = storyboard?.instantiateViewController(identifier: "CreateHabitVC") as? CreateHabitVC else { return }
+        presentingViewController?.goPreviousPage(CreateHabitVC)
+    }
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
         dismissDetail()
     }
     
