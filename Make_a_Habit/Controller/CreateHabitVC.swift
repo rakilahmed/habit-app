@@ -29,14 +29,14 @@ class CreateHabitVC: UIViewController, UITextViewDelegate {
         habitType = .shortTerm
         shortTermBtn.setSelectedColor()
         longTermBtn.setDeselectedColor()
-        longTermBtn.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.5)
+        longTermBtn.titleLabel?.textColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 0.5)
     }
     
     @IBAction func longTermBtnPressed(_ sender: Any) {
         habitType = .longTerm
         longTermBtn.setSelectedColor()
         shortTermBtn.setDeselectedColor()
-        shortTermBtn.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 0.5)
+        shortTermBtn.titleLabel?.textColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 0.5)
     }
     
     @IBAction func nextBtnPressed(_ sender: Any) {
