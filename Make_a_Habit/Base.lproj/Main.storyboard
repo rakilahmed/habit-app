@@ -27,13 +27,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-Zu-UHt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-Zu-UHt">
                                         <rect key="frame" x="325" y="50.666666666666657" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="ChZ-hW-6bB"/>
                                             <constraint firstAttribute="width" constant="35" id="el1-gr-1Cq"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="plus"/>
+                                        <state key="normal" image="plus"/>
                                         <connections>
                                             <action selector="addHabitBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kam-Kf-fys"/>
                                         </connections>
@@ -285,14 +285,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-n6-bVV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgz-n6-bVV">
                                         <rect key="frame" x="15" y="50.666666666666657" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="mPU-2t-x1v"/>
                                             <constraint firstAttribute="width" constant="35" id="pRH-d8-fO4"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="back-arrow"/>
+                                        <state key="normal" image="back-arrow"/>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="aRj-c3-2gU" eventType="touchUpInside" id="0HI-Il-U8v"/>
                                         </connections>
@@ -355,26 +355,26 @@
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mw4-v2-CHD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mw4-v2-CHD">
                                         <rect key="frame" x="15" y="50.666666666666657" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="3i5-X1-3nT"/>
                                             <constraint firstAttribute="height" constant="35" id="dYu-is-meF"/>
                                         </constraints>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="back-arrow"/>
+                                        <state key="normal" image="back-arrow"/>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="FBg-wW-Q5z" eventType="touchUpInside" id="ebf-OS-iYF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqA-WW-WpY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqA-WW-WpY">
                                         <rect key="frame" x="325" y="50.666666666666657" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="GfG-po-OE7"/>
                                             <constraint firstAttribute="height" constant="35" id="nm2-Ah-IkV"/>
                                         </constraints>
                                         <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" backgroundImage="close"/>
+                                        <state key="normal" image="close"/>
                                         <connections>
                                             <action selector="closeBtnPressed:" destination="FBg-wW-Q5z" eventType="touchUpInside" id="3pV-wL-XQ4"/>
                                         </connections>

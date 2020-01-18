@@ -16,9 +16,9 @@
 		8D47E4CB23CC62BA0075F87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D47E4C923CC62BA0075F87C /* LaunchScreen.storyboard */; };
 		8D54149A23CC7A4800DC6960 /* HabitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54149923CC7A4800DC6960 /* HabitsVC.swift */; };
 		8D54149C23CC819900DC6960 /* HabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D54149B23CC819900DC6960 /* HabitCell.swift */; };
+		8D78D59823D3A028000CFEF8 /* CreateHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D78D59723D3A028000CFEF8 /* CreateHabitVC.swift */; };
 		8DA92B3723D0086400AADAB2 /* FinishHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA92B3623D0086400AADAB2 /* FinishHabitVC.swift */; };
 		8DD4B1A723CE9B6C0071B251 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD4B1A623CE9B6C0071B251 /* UIViewControllerExt.swift */; };
-		8DD4B1AB23CEA1B80071B251 /* CreateHabitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD4B1AA23CEA1B80071B251 /* CreateHabitVC.swift */; };
 		8DD4B1AD23CEAB4A0071B251 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD4B1AC23CEAB4A0071B251 /* UIViewExt.swift */; };
 		8DD4B1AF23CEAFDA0071B251 /* UIBtnExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD4B1AE23CEAFDA0071B251 /* UIBtnExt.swift */; };
 		8DF91B2B23D3703B000D4D2F /* FontColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF91B2A23D3703B000D4D2F /* FontColorExt.swift */; };
@@ -36,9 +36,9 @@
 		8D47E4CC23CC62BA0075F87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D54149923CC7A4800DC6960 /* HabitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsVC.swift; sourceTree = "<group>"; };
 		8D54149B23CC819900DC6960 /* HabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitCell.swift; sourceTree = "<group>"; };
+		8D78D59723D3A028000CFEF8 /* CreateHabitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitVC.swift; sourceTree = "<group>"; };
 		8DA92B3623D0086400AADAB2 /* FinishHabitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishHabitVC.swift; sourceTree = "<group>"; };
 		8DD4B1A623CE9B6C0071B251 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
-		8DD4B1AA23CEA1B80071B251 /* CreateHabitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitVC.swift; sourceTree = "<group>"; };
 		8DD4B1AC23CEAB4A0071B251 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		8DD4B1AE23CEAFDA0071B251 /* UIBtnExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBtnExt.swift; sourceTree = "<group>"; };
 		8DF91B2A23D3703B000D4D2F /* FontColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColorExt.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8D54149923CC7A4800DC6960 /* HabitsVC.swift */,
-				8DD4B1AA23CEA1B80071B251 /* CreateHabitVC.swift */,
+				8D78D59723D3A028000CFEF8 /* CreateHabitVC.swift */,
 				8DA92B3623D0086400AADAB2 /* FinishHabitVC.swift */,
 			);
 			path = Controller;
@@ -202,8 +202,8 @@
 				8D47E4BC23CC62B80075F87C /* AppDelegate.swift in Sources */,
 				8D54149A23CC7A4800DC6960 /* HabitsVC.swift in Sources */,
 				8DF91B2B23D3703B000D4D2F /* FontColorExt.swift in Sources */,
+				8D78D59823D3A028000CFEF8 /* CreateHabitVC.swift in Sources */,
 				8D47E4C623CC62B80075F87C /* Make_a_Habit.xcdatamodeld in Sources */,
-				8DD4B1AB23CEA1B80071B251 /* CreateHabitVC.swift in Sources */,
 				8D54149C23CC819900DC6960 /* HabitCell.swift in Sources */,
 				8DD4B1AF23CEAFDA0071B251 /* UIBtnExt.swift in Sources */,
 				8D095D0923CE65FA00908E72 /* HabitType.swift in Sources */,
