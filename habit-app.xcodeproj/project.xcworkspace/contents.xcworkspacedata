@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Make_a_Habit.xcodeproj">
+      location = "self:/Users/rakilahmed/Dev/Apps/habit-app/habit-app.xcodeproj">
    </FileRef>
 </Workspace>

@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		8D095D0823CE65FA00908E72 /* HabitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitType.swift; sourceTree = "<group>"; };
-		8D47E4B823CC62B80075F87C /* Make_a_Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Make_a_Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D47E4B823CC62B80075F87C /* habit-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "habit-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D47E4BB23CC62B80075F87C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D47E4BD23CC62B80075F87C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8D47E4C223CC62B80075F87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		8D47E4AF23CC62B80075F87C = {
 			isa = PBXGroup;
 			children = (
-				8D47E4BA23CC62B80075F87C /* Make_a_Habit */,
+				8D47E4BA23CC62B80075F87C /* habit-app */,
 				8D47E4B923CC62B80075F87C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,12 +66,12 @@
 		8D47E4B923CC62B80075F87C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D47E4B823CC62B80075F87C /* Make_a_Habit.app */,
+				8D47E4B823CC62B80075F87C /* habit-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D47E4BA23CC62B80075F87C /* Make_a_Habit */ = {
+		8D47E4BA23CC62B80075F87C /* habit-app */ = {
 			isa = PBXGroup;
 			children = (
 				8D47E4D523CC62EB0075F87C /* Extensions */,
@@ -86,7 +86,7 @@
 				8D47E4CC23CC62BA0075F87C /* Info.plist */,
 				8D47E4C423CC62B80075F87C /* Make_a_Habit.xcdatamodeld */,
 			);
-			path = Make_a_Habit;
+			path = "habit-app";
 			sourceTree = "<group>";
 		};
 		8D47E4D223CC62D40075F87C /* Controller */ = {
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D47E4B723CC62B80075F87C /* Make_a_Habit */ = {
+		8D47E4B723CC62B80075F87C /* habit-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D47E4CF23CC62BA0075F87C /* Build configuration list for PBXNativeTarget "Make_a_Habit" */;
+			buildConfigurationList = 8D47E4CF23CC62BA0075F87C /* Build configuration list for PBXNativeTarget "habit-app" */;
 			buildPhases = (
 				8D47E4B423CC62B80075F87C /* Sources */,
 				8D47E4B523CC62B80075F87C /* Frameworks */,
@@ -141,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = Make_a_Habit;
+			name = "habit-app";
 			productName = Make_a_Habit;
-			productReference = 8D47E4B823CC62B80075F87C /* Make_a_Habit.app */;
+			productReference = 8D47E4B823CC62B80075F87C /* habit-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Rakil Ahmed";
 				TargetAttributes = {
 					8D47E4B723CC62B80075F87C = {
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8D47E4B323CC62B80075F87C /* Build configuration list for PBXProject "Make_a_Habit" */;
+			buildConfigurationList = 8D47E4B323CC62B80075F87C /* Build configuration list for PBXProject "habit-app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D47E4B723CC62B80075F87C /* Make_a_Habit */,
+				8D47E4B723CC62B80075F87C /* habit-app */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -320,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -354,12 +356,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT5QHZVQ62;
-				INFOPLIST_FILE = Make_a_Habit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/habit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rakilahmed.Make-a-Habit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakilahmed.habit-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,12 +374,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HT5QHZVQ62;
-				INFOPLIST_FILE = Make_a_Habit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/habit-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rakilahmed.Make-a-Habit";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rakilahmed.habit-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D47E4B323CC62B80075F87C /* Build configuration list for PBXProject "Make_a_Habit" */ = {
+		8D47E4B323CC62B80075F87C /* Build configuration list for PBXProject "habit-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D47E4CD23CC62BA0075F87C /* Debug */,
@@ -396,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D47E4CF23CC62BA0075F87C /* Build configuration list for PBXNativeTarget "Make_a_Habit" */ = {
+		8D47E4CF23CC62BA0075F87C /* Build configuration list for PBXNativeTarget "habit-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8D47E4D023CC62BA0075F87C /* Debug */,
